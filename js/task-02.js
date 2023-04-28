@@ -6,11 +6,13 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-console.log(ingredients);
+// console.log(ingredients);
+const ulIngridients = document.querySelector("#ingredients");
+// // console.log(ulIngridients);
 
 ingredients.forEach((ingredient) => {
   const li = document.createElement("li");
   li.textContent = `${ingredient}`;
   li.classList.add("item");
-  console.log(li);
+  ulIngridients.append(li);
 });

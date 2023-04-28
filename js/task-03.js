@@ -17,10 +17,12 @@ const gallery = document.querySelector(".gallery");
 images.forEach((image) => {
   const url = image.url;
   const alt = image.alt;
-  console.log(url);
-  console.log(alt);
-  gallery.insertAdjacentHTML("beforeend", `<img src=${url} alt=${alt}">`);
+
+  gallery.insertAdjacentHTML(
+    "beforeend",
+    `<img src=${url} width = 300px height= 200px alt=${alt}">`
+  );
 });
 gallery.style.display = `flex`;
 gallery.style.flexDirection = `column`;
-gallery.style.width = `500px`;
+gallery.style.gap = `20px`;
